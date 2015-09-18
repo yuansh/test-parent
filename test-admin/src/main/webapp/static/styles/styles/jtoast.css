@@ -1,0 +1,206 @@
+/*!
+ * Jtoast.css  v1.0
+ */
+.jtoast-view {
+	line-height: 1.4em;
+}
+
+.jtoast-view .jtoast-shade{
+	position: fixed;
+	_position: absolute;
+	_clear: both;
+	_top: expression(eval(document.compatMode &&   
+           document.compatMode == 'CSS1Compat')?   
+           documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight)-
+		 1: document.body.scrollTop+(document.body.clientHeight-this.clientHeight)-
+		 1);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.jtoast-view .jtoast-shade {
+	z-index: 999;
+	background-color: #000;
+	filter: alpha(Opacity = 20);
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+}
+
+.jtoast-view .jtoast-box {
+		position: absolute;
+	_position: absolute;
+	_clear: both;
+	_top: expression(eval(document.compatMode &&   
+           document.compatMode == 'CSS1Compat')?   
+           documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight)-
+		 1: document.body.scrollTop+(document.body.clientHeight-this.clientHeight)-
+		 1);
+	z-index: 1000;
+	left: 0px;
+	right: 0px;
+	top:10%;
+	width: 450px;
+	margin: auto;
+	border: solid 1px #d8d8d8;
+	background: #FFF;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.jtoast-view .jtoast-title {
+	padding: 10px;
+	color: #0b92dc;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.jtoast-view .jtoast-title #close {
+	float: right;
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../../../static/images/close.png);
+}
+
+.jtoast-view .jtoast-content {
+	margin: 0 50px;
+}
+.jtoast-view .jtoast-content p {
+	margin: 10px 0 20px 0;
+	word-break: break-word;
+}
+.jtoast-view .jtoast-opt,.jtoast-view .jt-item.opt {
+	text-align: right;
+}
+
+.jtoast-view .disable{
+	background-color: #eee;
+}
+
+/**�Ķ���ʽ**/
+.read .jtoast-box {
+	width: 960px;
+}
+
+.read .jtoast-content {
+	margin: 0 80px;
+}
+
+.read .jtoast-title{
+	font-size: 16px;
+	text-align: center;
+}
+
+.read .protocol_datail {
+	margin-bottom: 20px;
+	height: 350px;
+	overflow-y: scroll;
+	padding: 20px;
+	border: 1px solid #d8d8d8;
+}
+.read .protocol_datail p {
+	font-size: 12px;
+	text-indent: 2em;
+	line-height: 25px;
+}
+.read .jtoast-opt {
+	text-align: center;
+}
+.read .jtoast-box {
+	top:15%;
+}
+
+
+
+/**��������̬*/
+.modify .jtoast-box {
+	width: 500px;
+}
+
+.modify .jt-label {
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 10px;
+	float: left;
+}
+
+.modify .jt-input {
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 8px;
+	line-height: 20px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: 1px solid #d8d8d8;
+	color: #7e7e7e;
+}
+
+.modify .jt-input.min {
+	width: 80px;
+}
+
+.modify .jt-item {
+	padding-top: 5px;
+}
+
+.modify .jt-item .mv_msg {
+	margin-left: 110px;
+	color: #f72828;
+}
+
+/***/
+.jtoast-view a {
+	text-decoration: none;
+}
+
+a.blue {
+	color: #0b92dc;
+	font-size: 14px;
+}
+/**��ť*/
+.jtoast-view .jtoast-btn {
+	border: 1px solid #d8d8d8;
+	padding: 5px 15px;
+	margin-left: 10px;
+	color: #000;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.jtoast-view .jtoast-btn4 {
+	display: inline-block;
+	width: 100px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-family: "΢���ź�", "Microsoft YaHei";
+}
+
+.jtoast-view .jtoast-btn.blue,.jtoast-view .jtoast-btn4.blue{
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: 1px solid #1b95e0;
+	color: #1b95e0;
+}
+
+.jtoast-view .jtoast-btn.yellow,.jtoast-view .jtoast-btn4.yellow{
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: 1px solid #ff9100;
+	color: #ff9100;
+}
